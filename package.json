@@ -1,0 +1,39 @@
+{
+  "name": "strapi-for-Reunion",
+  "version": "1.0.1",
+  "private": false,
+  "description": "A Strapi application",
+  "license": "MIT",
+  "author": {
+    "name": "Olivier Prêtre"
+  },
+  "scripts": {
+    "build": "strapi build",
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "strapi": "strapi"
+  },
+  "dependencies": {
+    "@ckeditor/strapi-plugin-ckeditor": "^0.0.10",
+    "@strapi/plugin-cloud": "^4.21.0",
+    "@strapi/plugin-i18n": "^4.21.0",
+    "@strapi/plugin-upload": "^4.21.0",
+    "@strapi/plugin-users-permissions": "^4.21.0",
+    "@strapi/provider-upload-local": "^4.21.0",
+    "@strapi/strapi": "^4.21.0",
+    "@strapi/utils": "^4.21.0",
+    "better-sqlite3": "8.6.0",
+    "fs-extra": "^11.2.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "^5.3.4",
+    "styled-components": "5.3.3"
+  },
+  "engines": {
+    "node": ">=18.0.0 <=20.x.x",
+    "npm": ">=6.0.0"
+  },
+  "strapi": {
+    "uuid": "8f043935-5cd2-434f-a23c-666917a34cb3"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "kind": "singleType",
+  "collectionName": "pingenerator_settings",
+  "info": {
+    "singularName": "pingenerator-setting",
+    "pluralName": "pingenerator-settings",
+    "displayName": "Pingenerator Settings",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "content-manager": {
+      "visible": true
+    },
+    "content-type-builder": {
+      "visible": true
+    }
+  },
+  "attributes": {
+    "imageToPinOnUrl": {
+      "type": "string"
+    }
+  }
+}

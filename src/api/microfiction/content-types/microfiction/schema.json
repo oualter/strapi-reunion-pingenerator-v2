@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "microfictions",
+  "info": {
+    "singularName": "microfiction",
+    "pluralName": "microfictions",
+    "displayName": "microfiction",
+    "description": "une microfiction épinglée à un point sur la carte"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "content-manager": {
+      "visible": true
+    },
+    "content-type-builder": {
+      "visible": true
+    }
+  },
+  "attributes": {
+    "Heure": {
+      "type": "string"
+    },
+    "Texte_microfiction": {
+      "type": "blocks"
+    },
+    "ordre_de_lecture": {
+      "type": "integer"
+    },
+    "pingenerator": {
+      "type": "customField",
+      "customField": "plugin::pingenerator.pingenerator"
+    },
+    "Date": {
+      "type": "string"
+    },
+    "GingkoBiloba": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

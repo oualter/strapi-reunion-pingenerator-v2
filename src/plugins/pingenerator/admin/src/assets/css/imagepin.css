@@ -1,0 +1,84 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+.imageplaceholder-wrapper {
+  position: relative;
+}
+.image-placeholder {
+  /* outline:2px solid red; */
+  position: relative;
+}
+.image-placeholder img {
+  width: 100%;
+  height: auto;
+}
+.pin,
+.savedpin {
+  position: absolute;
+  background-color: red;
+  /* text-indent: -100000px; */
+  border-radius: 50%;
+}
+.pin {
+  z-index: 1000;
+}
+.savedpin {
+  background-color: rgb(0, 128, 0);
+  cursor: no-drop;
+}
+.thispostpin,
+.thispostpin::before {
+  content: "";
+  cursor: default;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  transition: all 0.3s;
+  background-color: rgb(0, 128, 0);
+}
+.thispostpin::before {
+  animation: vousetesici 1.5s infinite;
+  position: absolute;
+  background-color: #00ff00;
+}
+
+@keyframes vousetesici {
+  50% {
+    transform: scale(4);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+.legend {
+  font-size: 0.8rem;
+  position: fixed;
+  margin-top:-20px;
+  margin-left:-20px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 0.5rem;
+  border:1px solid #000
+}
+.legend .pin, .legend .savedpin {
+  position: static;
+}
+.pin-legend-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+.display-pos {
+  /* padding: 0.4rem 0.5rem; */
+}
+
+/* .tomap {
+  outline:5px solid green
+} */
